@@ -1,0 +1,374 @@
+{
+  "card_name": "Jupiter Edge+ CSB Bank RuPay Credit Card",
+  "issuer": "CSB Bank",
+  "co_brand": "Jupiter Money",
+  "network": "RuPay",
+  "card_type": "Unsecured Credit Card",
+  "lifetime_free": true,
+  "currency": "INR",
+  "annual_fee": {
+    "first_year": 0,
+    "subsequent_years": 0,
+    "note": "Lifetime free card with ₹0 joining fee"
+  },
+  "fees_and_charges": {
+    "joining_fee": 0,
+    "annual_fee": 0,
+    "card_issuance_fee": 0,
+    "card_replacement_fee": 249,
+    "late_payment_fee": "5% of outstanding amount due subject to a minimum of Rs. 250 and a maximum of Rs 2000",
+    "interest_rate": "3.5% per month (42% per annum)",
+    "cash_advance_fee": "2.5% of amount withdrawn (minimum ₹500)",
+    "foreign_transaction_fee": "3.5%"
+  },
+  "cashback": {
+    "shopping": {
+      "rate": "10%",
+      "max_per_billing_cycle": 1500,
+      "merchant_limit": 500,
+      "description": "10% cashback for shopping",
+      "eligible_merchants": [
+        "Amazon",
+        "Flipkart",
+        "Myntra",
+        "Ajio",
+        "Nykaa",
+        "Zudio",
+        "Zara",
+        "Croma",
+        "Reliance Trends",
+        "Tata Cliq",
+        "Reliance Digital"
+      ],
+      "exclusions": [
+        "Gift card purchases",
+        "Wallet loading",
+        "EMI transactions",
+        "Cancelled or refunded transactions"
+      ]
+    },
+    "travel": {
+      "rate": "5%",
+      "max_per_billing_cycle": 1000,
+      "description": "5% cashback for travel bookings",
+      "eligible_merchants": [
+        "MakeMyTrip",
+        "ClearTrip",
+        "Yatra",
+        "EaseMyTrip"
+      ]
+    },
+    "jupiter_flights": {
+      "rate": "7%",
+      "max_per_billing_cycle": "No Capping",
+      "description": "7% cashback for flight bookings on Jupiter Flights"
+    },
+    "others": {
+      "rate": "1%",
+      "max_per_billing_cycle": "No limit",
+      "description": "1% cashback on all the UPI and eligible spends",
+      "exclusions": [
+        "Fuel",
+        "Rent",
+        "Government payments",
+        "Education payments",
+        "Wallet loads"
+      ]
+    }
+  },
+  "rewards": {
+    "type": "Jewels",
+    "conversion_rate": "5 Jewels = ₹1 (1 Jewel = ₹0.2)",
+    "earning_frequency": "Posted after transaction settlement",
+    "expiry": "Jewels never expire",
+    "redemption_options": [
+      "Cash",
+      "E-vouchers",
+      "Flight bookings",
+      "Credit card bill payments",
+      "Utility bill payments",
+      "Digital Gold",
+      "Insurance",
+      "Discount zone",
+      "Redemption while making payments on popular apps like Swiggy, JioMart, Licious etc."
+    ]
+  },
+  "upi_features": {
+    "supported": true,
+    "upi_enabled": "Yes, it's a RUPAY card",
+    "description": "UPI Transactions can be made using the Jupiter App or any other Payments App",
+    "reward_eligibility": "Reward points are provided if UPI transactions are made only using the Jupiter App",
+    "payment_apps": "Jupiter App or any UPI app supporting RuPay Credit Cards",
+    "emi_on_upi": "Available for eligible transactions",
+    "upi_limits": {
+      "daily": "As per NPCI and issuer limits",
+      "per_transaction": "Subject to merchant acceptance"
+    },
+    "unsupported_qr_types": [
+      "Personal UPI QRs",
+      "Some static non-merchant QRs"
+    ]
+  },
+  "emi_features": {
+    "description": "Pay Later with EMI or Scan and Pay with EMI",
+    "interest_rate_starting": "1.33% per month",
+    "tenures": ["3", "6", "9", "12"],
+    "eligible_transactions": [
+      "Credit card spends",
+      "UPI spends (eligible merchants)"
+    ],
+    "non_eligible": [
+      "Fuel purchases",
+      "Wallet loads",
+      "Cash advance"
+    ]
+  },
+  "features": {
+    "fuel_surcharge_waiver": "1% fuel surcharge waiver on every spend",
+    "spend_insights": "Track all your spends in one place and get insights",
+    "contactless": "Tap and pay enabled",
+    "security": [
+      "Instant card block/unblock",
+      "Transaction alerts",
+      "OTP-based authentication"
+    ]
+  },
+  "billing_and_repayment": {
+    "statement_cycle": "Monthly",
+    "due_date": "Typically 15-20 days from statement date",
+    "minimum_due": "As defined by CSB Bank",
+    "auto_debit": "Supported via Jupiter app",
+    "interest_calculation": "Daily outstanding balance method"
+  },
+  "application_process": {
+    "fully_digital": true,
+    "average_time": "10 minutes",
+    "paperless": true,
+    "description": "Instant digital application - takes just 10 minutes",
+    "information_required": [
+      "Aadhar Linked Mobile Number",
+      "Email Address",
+      "PAN Number"
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "name": "Basic Information Registration",
+        "description": "Mobile Number, Device Binding, Email Address registration and getting the PAN details. For Users who are already registered on the Jupiter app, this process will be skipped.",
+        "fields": ["Mobile Number", "Email", "PAN Number"],
+        "note": "Users already on Jupiter app can skip this"
+      },
+      {
+        "step": 2,
+        "name": "PAN Card Confirmation",
+        "description": "Enter PAN number for instant verification",
+        "required": true,
+        "instant": true,
+        "reason": "Mandatory as per RBI regulations for identity verification, credit bureau reporting, and tax compliance"
+      },
+      {
+        "step": 3,
+        "name": "Eligibility Check",
+        "description": "Check eligibility using DOB, PinCode (for serviceability), professional details (education background, organisation name), CIBIL consent, personal details (fathers and mothers name), marital status and income details",
+        "credit_score_impact": false,
+        "instant": true,
+        "fields": [
+          "Date of Birth",
+          "PinCode",
+          "Professional details (education, organization)",
+          "CIBIL consent",
+          "Personal details (parents names)",
+          "Marital status",
+          "Income details"
+        ]
+      },
+      {
+        "step": 4,
+        "name": "Card CVP & Limit Assignment",
+        "description": "After the eligibility check, a limit will be assigned to the customer",
+        "limit_range": "₹25,000 to ₹7,00,000"
+      },
+      {
+        "step": 5,
+        "name": "Personal Details Form",
+        "description": "Complete personal and employment information",
+        "fields": ["Name", "Address", "Employment details"]
+      },
+      {
+        "step": 6,
+        "name": "eKYC Process (Aadhaar)",
+        "description": "Complete the KYC process which will require verification of Aadhar Number, liveliness check to see if no one is pretending to be the user, confirm the user address",
+        "required": true,
+        "documents_needed": "Only 12-digit Aadhaar number (physical card not required)",
+        "process": "UIDAI regulated, RBI approved eKYC",
+        "time": "Takes only a few seconds",
+        "security": "Secure and encrypted verification process",
+        "reason": "Required for 100% paperless KYC compliance as per RBI norms",
+        "requirements": [
+          "Aadhaar number verification",
+          "Liveliness check",
+          "Address confirmation"
+        ]
+      },
+      {
+        "step": 7,
+        "name": "vKYC Process",
+        "description": "Video KYC where the user is expected to be in a well-lit quiet place with physical PAN card handy",
+        "optional": false,
+        "requirements": [
+          "Well-lit quiet place",
+          "Physical PAN card",
+          "Stable internet connection",
+          "White blank paper and a pen",
+          "Remember details filled during application"
+        ],
+        "approval_time": "Can take up to 24 hours after successful vKYC completion"
+      },
+      {
+        "step": 8,
+        "name": "Virtual Card & UPI Setup",
+        "description": "Once vKYC is approved, users will be guided through enabling the virtual card and setting up UPI",
+        "features": [
+          "Enable virtual card",
+          "Set up UPI",
+          "Start using card immediately"
+        ]
+      }
+    ],
+    "application_links": {
+      "existing_user": "https://jptr.onelink.me/TOMp/webhptop",
+      "new_user": "https://jupiter.money/edge-plus-upi-rupay-credit-card/"
+    }
+  },
+  "eligibility": {
+    "age": "21-60 years",
+    "income": "Minimum ₹25,000 per month",
+    "credit_score": "700+ preferred",
+    "employment_type": ["Salaried", "Self-employed"],
+    "documentation": [
+      "PAN Card (mandatory)",
+      "Aadhaar Card (mandatory)",
+      "Income Proof (if required)"
+    ],
+    "dependency": "Depends on the CSB Bank underwriting policy checks"
+  },
+  "card_limits": {
+    "minimum": "₹25,000",
+    "maximum": "₹7,00,000",
+    "description": "Up to 7 Lakhs depending on the eligibility requirements",
+    "initial_typical": "₹50,000 to ₹1,00,000 for first-time users",
+    "limit_increase": "Based on usage and repayment behavior",
+    "note": "Exact limit is subject to eligibility and underwriting policy of CSB bank"
+  },
+  "compliance_and_reporting": {
+    "credit_bureau_reporting": ["CIBIL", "Experian", "Equifax"],
+    "regulator": "RBI",
+    "issuer_responsibility": "CSB Bank is the lender and card issuer"
+  },
+  "best_for": [
+    "UPI-heavy users",
+    "Online shoppers (Amazon, Flipkart, Myntra etc.)",
+    "Travel enthusiasts",
+    "First-time credit card users",
+    "Users seeking lifetime free cards",
+    "Users who want UPI payments from credit card"
+  ],
+  "not_ideal_for": [
+    "High international spenders",
+    "Users looking for lounge access",
+    "Frequent fuel spenders"
+  ],
+  "key_highlights": [
+    "10% cashback on shopping (Amazon, Flipkart, Myntra, Ajio, Zara, Nykaa, Croma, etc.) - up to ₹1,500/month",
+    "5% cashback on travel (MakeMyTrip, EaseMyTrip, etc.) - up to ₹1,000/month",
+    "7% cashback on Jupiter Flights with no capping",
+    "1% cashback on everything else (no limit)",
+    "Lifetime FREE - zero joining fee, zero annual fee",
+    "UPI payments from credit card (scan any merchant QR)",
+    "EMI from 1.33% interest - convert purchases to easy EMIs",
+    "Instant digital application - takes just 10 minutes",
+    "Credit limit up to ₹7 lakhs"
+  ],
+  "faqs": [
+    {
+      "question": "Do I need a physical PAN card or just the PAN number?",
+      "answer": "For the initial PAN verification (Step 2), you only need your 10-digit PAN number - no physical card required. The verification is instant and digital. However, during the vKYC process (Step 7), you will need to show your physical PAN card to the video verification agent. So keep your physical PAN card ready for the vKYC step."
+    },
+    {
+      "question": "Do I need a physical Aadhaar card?",
+      "answer": "No, you do NOT need the physical Aadhaar card. You only need your 12-digit Aadhaar number for the eKYC process. The entire verification is digital and done through UIDAI's secure system. Just have your Aadhaar number ready - the physical card is not required at any step."
+    },
+    {
+      "question": "Why is PAN mandatory for credit cards?",
+      "answer": "PAN is mandatory as per RBI regulations for several reasons: 1) Identity Verification - PAN is your unique tax identifier, 2) Legal Compliance - RBI requires all credit card issuers to collect PAN for KYC, 3) Credit Bureau Reporting - Banks report your credit history to CIBIL using your PAN, 4) Tax Purposes - For tracking financial transactions. Without PAN, banks cannot issue credit cards."
+    },
+    {
+      "question": "Why is Aadhaar required?",
+      "answer": "Aadhaar is required for instant eKYC (Electronic Know Your Customer) verification. Benefits: 1) 100% paperless process, 2) Instant verification in seconds, 3) UIDAI regulated and RBI approved, 4) Only the 12-digit number is needed, no physical card, 5) Complies with RBI's KYC norms. Without Aadhaar, the digital application cannot be completed."
+    },
+    {
+      "question": "Will I get UPI cashback with any UPI app?",
+      "answer": "No. This is VERY IMPORTANT: You can make UPI payments using the Jupiter App or any other UPI app that supports RuPay credit cards. However, cashback rewards are credited ONLY when UPI transactions are made via the Jupiter App. Using other UPI apps for payments will work, but you won't earn rewards."
+    },
+    {
+      "question": "What is the maximum cashback I can earn per month?",
+      "answer": "Shopping: Up to ₹1,500 per billing cycle (10% cashback with ₹500 merchant limit). Travel: Up to ₹1,000 per billing cycle (5% cashback). Jupiter Flights: No limit (7% cashback). Others: No limit (1% cashback on all eligible spends). The maximum depends on your spending pattern."
+    },
+    {
+      "question": "Is there any joining fee or annual fee?",
+      "answer": "No. The Jupiter Edge+ card is completely FREE for life. ₹0 joining fee, ₹0 annual fee, ₹0 card issuance fee. There are no hidden charges for having the card. This is a lifetime free credit card."
+    },
+    {
+      "question": "What is the credit limit I can get?",
+      "answer": "The credit limit ranges from ₹25,000 to ₹7,00,000 (7 lakhs) depending on your eligibility. For first-time credit card users, the typical initial limit is between ₹50,000 to ₹1,00,000. The exact limit is determined by CSB Bank's underwriting policy based on your income, credit score, and financial profile."
+    },
+    {
+      "question": "How long does the application process take?",
+      "answer": "The entire application process takes approximately 10 minutes if you have all documents ready. Breakdown: PAN verification is instant, Eligibility check is instant, eKYC takes a few seconds, vKYC approval can take up to 24 hours. Overall, you can complete your part in about 10 minutes."
+    },
+    {
+      "question": "What documents do I need?",
+      "answer": "Required documents: 1) PAN Card (number for verification, physical card for vKYC), 2) Aadhaar Card (only 12-digit number needed), 3) Income Proof (may be required in some cases). All documents are verified digitally, so you don't need to submit physical copies during the online application."
+    },
+    {
+      "question": "What is the minimum income required?",
+      "answer": "The minimum monthly income required is ₹25,000 per month. This applies to both salaried and self-employed individuals. A credit score of 700+ is preferred but not mandatory."
+    },
+    {
+      "question": "Will checking eligibility affect my credit score?",
+      "answer": "No. The eligibility check is a soft inquiry on your credit report, which has NO impact on your credit score. Only when you formally apply and the bank does a hard inquiry does it potentially affect your score, but this impact is minimal and temporary."
+    },
+    {
+      "question": "Can I convert my purchases to EMI?",
+      "answer": "Yes. You can convert both credit card spends and UPI spends to EMI starting at just 1.33% interest per month. Available tenures are 3, 6, 9, and 12 months. However, EMI is not available for fuel purchases, wallet loads, or cash advances."
+    },
+    {
+      "question": "What is Jewels and how does it work?",
+      "answer": "Jewels is the reward currency for cashback. Conversion: 5 Jewels = ₹1 (or 1 Jewel = ₹0.2). Jewels never expire. You can redeem Jewels for: Cash, E-vouchers, Flight bookings, Credit card bill payments, Utility bill payments, Digital Gold, Insurance, and payments on apps like Swiggy, JioMart, Licious etc."
+    },
+    {
+      "question": "Which merchants are eligible for 10% cashback?",
+      "answer": "10% cashback merchants: Amazon, Flipkart, Myntra, Ajio, Nykaa, Zudio, Zara, Croma, Reliance Trends, Tata Cliq, Reliance Digital. Maximum ₹1,500 per billing cycle with ₹500 limit per merchant. Exclusions: Gift cards, wallet loading, EMI transactions, cancelled/refunded transactions."
+    },
+    {
+      "question": "Is the card accepted internationally?",
+      "answer": "Yes, the card is a RuPay card which has international acceptance. However, foreign transactions will incur a 3.5% foreign transaction fee. The card is best suited for domestic use where you can maximize cashback benefits."
+    },
+    {
+      "question": "What if I lose my card?",
+      "answer": "If you lose your card, you can instantly block it through the Jupiter app. A replacement card will be issued for a fee of ₹249. You can continue using the virtual card via the Jupiter app even while waiting for the replacement physical card."
+    },
+    {
+      "question": "What is the late payment fee?",
+      "answer": "The late payment fee is 5% of the outstanding amount due, subject to a minimum of ₹250 and a maximum of ₹2,000. It's important to pay at least the minimum due amount by the due date to avoid this fee."
+    },
+    {
+      "question": "Can I make UPI payments from this credit card?",
+      "answer": "Yes! This is one of the unique features. You can make UPI payments directly from your credit card by scanning any merchant QR code. You can use the Jupiter App or any UPI app supporting RuPay credit cards. IMPORTANT: Cashback is only earned when using the Jupiter App for UPI transactions."
+    },
+    {
+      "question": "What is vKYC and what do I need for it?",
+      "answer": "vKYC is Video KYC - a video call with a verification agent. Requirements: 1) Well-lit, quiet place, 2) Physical PAN card in hand, 3) Stable internet connection, 4) White blank paper and pen, 5) Remember the details you filled during application. The vKYC approval can take up to 24 hours after completion."
+    }
+  ]
+}
